@@ -17,10 +17,10 @@ if day_of_week == 3:
     print(quote_of_the_week)
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as connection:
-        connection.login(user=my_email, password=password)
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         connection.sendmail(
-            from_addr=my_email,
-            to_addrs=my_email,
+            from_addr=MY_EMAIL,
+            to_addrs=MY_EMAIL,
             msg=f"Subject: Monday Motivational Quote\n\n {quote_of_the_week}"
         )
 
