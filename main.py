@@ -10,7 +10,7 @@ MY_PASSWORD = os.environ.get("MY_PASSWORD")
 now = dt.datetime.now()
 day_of_week = now.weekday()
 
-if day_of_week == 2:
+if day_of_week == 3:
     with open("quotes.txt", "r") as file:
         quotes = file.readlines()
         quote_of_the_week = random.choice(quotes)
